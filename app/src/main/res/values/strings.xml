@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Barcode Share</string>
+
+    <string name="error_dialog_title">エラー</string>
+    <string name="error_list_item_message">タップして更新してください</string>
+    <string name="error_retry_button_label">再試行</string>
+    <string name="error_message_network">通信に失敗しました。</string>
+    <string name="error_message_default">処理に失敗しました。</string>
+
 </resources>

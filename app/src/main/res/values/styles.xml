@@ -1,11 +1,52 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ToolbarTitleTextAppearance.White" parent="TextAppearance.AppCompat">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <!-- Text -->
+    <style name="Text.Normal" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="Text.Normal.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Large" parent="Text.Normal">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Text.Large.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Small" parent="Text.Normal">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Text.Small.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Tiny" parent="Text.Normal">
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+    </style>
+
+    <style name="Text.Tiny.Bold" parent="Text.Normal">
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>
