@@ -7,4 +7,5 @@
     <string name="error_message_network">通信に失敗しました。</string>
     <string name="error_message_default">処理に失敗しました。</string>
 
+    <string name="barcode_list_empty_label">データがありません。</string>
 </resources>

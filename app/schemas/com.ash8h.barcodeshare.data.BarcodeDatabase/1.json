@@ -2,11 +2,11 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "4e6d1873d27064ea10359765dbec8e17",
+    "identityHash": "54eb040b98c5f6c799e87be0a1920e1b",
     "entities": [
       {
         "tableName": "Barcode",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `code` TEXT NOT NULL, `description` TEXT, `createdDate` TEXT NOT NULL, `updatedDate` TEXT NOT NULL)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `data` TEXT NOT NULL, `format` TEXT NOT NULL, `description` TEXT, `createdDate` TEXT NOT NULL, `updatedDate` TEXT NOT NULL)",
         "fields": [
           {
             "fieldPath": "id",
@@ -15,8 +15,14 @@
             "notNull": true
           },
           {
-            "fieldPath": "code",
-            "columnName": "code",
+            "fieldPath": "data",
+            "columnName": "data",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "format",
+            "columnName": "format",
             "affinity": "TEXT",
             "notNull": true
           },
@@ -52,7 +58,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4e6d1873d27064ea10359765dbec8e17')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '54eb040b98c5f6c799e87be0a1920e1b')"
     ]
   }
 }

@@ -8,7 +8,7 @@ import androidx.room.TypeConverters
 import com.ash8h.barcodeshare.data.entity.Barcode
 
 @Database(entities = [Barcode::class], version = 1)
-@TypeConverters(ZonedDateTimeTypeConverter::class)
+@TypeConverters(ZonedDateTimeTypeConverter::class, CodeFormatTypeConverter::class)
 abstract class BarcodeDatabase : RoomDatabase() {
 
     companion object {

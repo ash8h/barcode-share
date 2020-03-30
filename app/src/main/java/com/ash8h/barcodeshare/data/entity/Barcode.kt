@@ -7,7 +7,8 @@ import java.time.ZonedDateTime
 @Entity
 data class Barcode(
     @PrimaryKey(autoGenerate = true) val id: Long,
-    val code: String,
+    val data: String,
+    val format: CodeFormat,
     val description: String?,
     val createdDate: ZonedDateTime,
     val updatedDate: ZonedDateTime
