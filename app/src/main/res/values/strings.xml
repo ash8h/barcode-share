@@ -8,4 +8,6 @@
     <string name="error_message_default">処理に失敗しました。</string>
 
     <string name="barcode_list_empty_label">データがありません。</string>
+    <string name="fab_library_label">ギャラリーから選択</string>
+    <string name="fab_camera_label">カメラで読み取る</string>
 </resources>

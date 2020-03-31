@@ -49,4 +49,9 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="FabLabel" parent="Text.Small">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/fab_label_text</item>
+    </style>
+
 </resources>

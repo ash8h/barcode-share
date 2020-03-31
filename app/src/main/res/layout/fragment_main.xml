@@ -39,4 +39,85 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <View
+        android:id="@+id/fab_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/fab_background"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_add_black_24dp"
+        android:tint="@color/white"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_library"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@drawable/ic_photo_library_black_24dp"
+        android:tint="@color/white"
+        android:visibility="gone"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@id/fab"
+        app:layout_constraintLeft_toLeftOf="@id/fab"
+        app:layout_constraintRight_toRightOf="@id/fab"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/fab_library_text"
+        style="@style/FabLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/fab_library_label"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/fab_library"
+        app:layout_constraintRight_toLeftOf="@id/fab_library"
+        app:layout_constraintTop_toTopOf="@id/fab_library"
+        tools:visibility="visible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@drawable/ic_photo_camera_black_24dp"
+        android:tint="@color/white"
+        android:visibility="gone"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@id/fab_library"
+        app:layout_constraintLeft_toLeftOf="@id/fab"
+        app:layout_constraintRight_toRightOf="@id/fab"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/fab_camera_text"
+        style="@style/FabLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/fab_camera_label"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/fab_camera"
+        app:layout_constraintRight_toLeftOf="@id/fab_camera"
+        app:layout_constraintTop_toTopOf="@id/fab_camera"
+        tools:visibility="visible" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,10 +10,15 @@
     <color name="loading_background">#a0ffffff</color>
 
     <color name="transparent">@android:color/transparent</color>
+    <color name="white">#fff</color>
     <color name="black">#3F3C3C</color>
     <color name="gray">#808080</color>
     <color name="lightGray">#C4C4C4</color>
     <color name="superLightGray">#e8e8e8</color>
     <color name="darkGray">#a9a9a9</color>
+
+    <color name="fab_background">#c0ffffff</color>
+    <color name="fab_label_background">@color/superLightGray</color>
+    <color name="fab_label_text">@color/black</color>
 
 </resources>
